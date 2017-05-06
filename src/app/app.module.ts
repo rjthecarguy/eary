@@ -12,6 +12,10 @@ import { Services } from '../pages/services/services';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
+import { SnapPest } from '../pages/snap-pest/snap-pest';
+import { SnapPestInfo } from '../pages/snap-pest-info/snap-pest-info';
+import { Camera } from '@ionic-native/camera';
+
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { HttpModule } from '@angular/http';
     AboutUs,
     ContactUs,
     Quote,
-    Services
+    Services,
+    SnapPest,
+    SnapPestInfo
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -36,11 +42,14 @@ import { HttpModule } from '@angular/http';
     AboutUs,
     ContactUs,
     Quote,
-    Services
+    Services,
+    SnapPest,
+    SnapPestInfo
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -3875,6 +3875,15 @@ ion-icon {
   text-align: center;
 }
 
+#snapInfoDiv p {
+  text-align: center;
+  line-height: 1.8em;
+}
+
+#snapInfoDiv {
+  text-align: center;
+}
+
 ion-action-sheet {
   position: absolute;
   top: 0;

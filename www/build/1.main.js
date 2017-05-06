@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 266:
+/***/ 271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__about_us__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutUsModule", function() { return AboutUsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__snap_pest_info__ = __webpack_require__(102);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SnapPestInfoModule", function() { return SnapPestInfoModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,26 +18,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AboutUsModule = (function () {
-    function AboutUsModule() {
+var SnapPestInfoModule = (function () {
+    function SnapPestInfoModule() {
     }
-    return AboutUsModule;
+    return SnapPestInfoModule;
 }());
-AboutUsModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */])({
+SnapPestInfoModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_0__about_us__["a" /* AboutUs */],
+            __WEBPACK_IMPORTED_MODULE_2__snap_pest_info__["a" /* SnapPestInfo */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_0__about_us__["a" /* AboutUs */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__snap_pest_info__["a" /* SnapPestInfo */]),
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_0__about_us__["a" /* AboutUs */]
+            __WEBPACK_IMPORTED_MODULE_2__snap_pest_info__["a" /* SnapPestInfo */]
         ]
     })
-], AboutUsModule);
+], SnapPestInfoModule);
 
-//# sourceMappingURL=about-us.module.js.map
+//# sourceMappingURL=snap-pest-info.module.js.map
 
 /***/ })
 
