@@ -1,0 +1,118 @@
+  Generated template for the Contact page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cleaning Quote Request</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p *ngIf="!submitComplete" class="paraCenter">Please give us alittle information regarding the cleaning you need and we will contact you shortly with a quote.</p>
+<ion-list *ngIf=!submitComplete no-lines>
+ 
+    <form [formGroup]="contact">
+ 
+   		 <ion-item *ngIf="!contact.controls.Name.valid && submitAttempt">
+                <p style="color: #ea6153;">Please enter a name.</p>
+            </ion-item>
+
+        <ion-item >
+            <ion-label floating>Name</ion-label>
+            <ion-input formControlName="Name" type="text"></ion-input>
+        </ion-item>
+ 
+         <ion-item *ngIf="!contact.controls.Email.valid && submitAttempt">
+                <p style="color: #ea6153;">Please enter an Email address.</p>
+            </ion-item>
+
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input formControlName="Email" type="text"></ion-input>
+        </ion-item>
+
+
+         <ion-item *ngIf="!contact.controls.Phone.valid && submitAttempt">
+                <p style="color: #ea6153;">Please enter a phone number.</p>
+            </ion-item>
+
+         <ion-item>
+            <ion-label floating>Phone</ion-label>
+            <ion-input formControlName="Phone" type="text"></ion-input>
+        </ion-item>
+
+
+        <div id="selectSpace"></div>
+
+        <ion-item *ngIf="!contact.controls.Rooms.valid && submitAttempt">
+                <p style="color: #ea6153;">Please Select Size.</p>
+            </ion-item>
+
+       
+    <ion-item>
+    <ion-label class="selectLabel">Rooms</ion-label>
+    <ion-select formControlName="Rooms" type="text">
+      <ion-option value="Studio">Studio</ion-option>
+      <ion-option value="1 Room">1 room</ion-option>
+      <ion-option value="2 Rooms">2 Rooms</ion-option>
+      <ion-option value="3 Rooms">3 Rooms</ion-option>
+      <ion-option value="4 Rooms">4 Rooms</ion-option>
+      <ion-option value="5+ Rooms">5 + Rooms</ion-option>
+    </ion-select>
+  </ion-item>
+
+   <ion-item *ngIf="!contact.controls.cleanType.valid && submitAttempt">
+                <p style="color: #ea6153;">Please Select Cleaning Type.</p>
+            </ion-item>
+
+   <ion-item>
+    <ion-label class="selectLabel" >Cleaning Type</ion-label>
+    <ion-select formControlName="cleanType" type="text">
+      <ion-option value="Full">Full</ion-option>
+      <ion-option value="Partial">Partial</ion-option>
+      <ion-option value="Move Out">Move Out</ion-option>
+      <ion-option value=Other>Other</ion-option>
+     </ion-select>
+  </ion-item>
+
+
+ 
+ 		<ion-item>
+            <ion-label floating>Message</ion-label>
+            <ion-textarea formControlName="Message" type="text"></ion-textarea>
+        </ion-item>
+
+
+
+
+              
+ 
+    </form>
+ 
+</ion-list>
+
+<button class="eliteOrange"  *ngIf=!submitComplete ion-button full color="primary" (click)="sendForm()">Send</button>
+
+
+
+<div id="thankyou" *ngIf="submitComplete"><h1>Thank You!</h1>
+
+<p>We we will be in contact with you as soon as possible!</p>
+
+</div>
+
+
+
+</ion-content>
+
+
